@@ -48,13 +48,18 @@ console.log(firstName2)
 
 
 // program6
-
 let student = {
     firstName:"chinmay",
     lastName:"deshpande",
     age:34
 }
 
+let student2:{firstName:string,lastName:string,age:number}
+student2 = {
+    firstName:"chinmay",
+    lastName:"deshpande",
+    age:12
+}
 
 
 

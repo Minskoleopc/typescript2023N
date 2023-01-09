@@ -39,3 +39,9 @@ let student = {
     lastName: "deshpande",
     age: 34
 };
+let student2;
+student2 = {
+    firstName: "chinmay",
+    lastName: "deshpande",
+    age: 12
+};
