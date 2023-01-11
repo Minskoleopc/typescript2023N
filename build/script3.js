@@ -75,3 +75,22 @@ var Direction;
     Direction[Direction["West"] = 3] = "West";
 })(Direction || (Direction = {}));
 console.log(Direction.North);
+var StatusCodes;
+(function (StatusCodes) {
+    StatusCodes[StatusCodes["NotFound"] = 404] = "NotFound";
+    StatusCodes[StatusCodes["Success"] = 200] = "Success";
+    StatusCodes[StatusCodes["Forbidden"] = 403] = "Forbidden";
+    StatusCodes[StatusCodes["TimeOut"] = 503] = "TimeOut";
+})(StatusCodes || (StatusCodes = {}));
+if (StatusCodes.NotFound) {
+    console.log('Code not found 4');
+}
+if (StatusCodes.Success) {
+    console.log('Code not found 3');
+}
+if (StatusCodes.Forbidden) {
+    console.log('Code not found 3');
+}
+if (StatusCodes.TimeOut) {
+    console.log('Code not found 4');
+}

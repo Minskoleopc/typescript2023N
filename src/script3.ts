@@ -92,3 +92,26 @@ enum Direction {
     West
 }
 console.log(Direction.North)
+
+
+enum StatusCodes {
+    NotFound = 404,
+    Success = 200,
+    Forbidden = 403,
+    TimeOut = 503
+}
+
+if(StatusCodes.NotFound){
+    console.log('Code not found 4')
+}
+
+if(StatusCodes.Success){
+    console.log('Code not found 3')
+}
+
+if(StatusCodes.Forbidden){
+    console.log('Code not found 3')
+}
+if(StatusCodes.TimeOut){
+    console.log('Code not found 4')
+}

@@ -60,7 +60,7 @@ function getName():void{
 }
 getName()
 
-function givString():string{
+function givString(){
     return "hello"
 }
 givString()
@@ -69,3 +69,4 @@ function canDriveA():boolean{
     return true
 }
 canDriveA()
+
