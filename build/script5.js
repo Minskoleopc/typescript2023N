@@ -56,3 +56,4 @@ class PersonNNNN {
     }
 }
 let ankit = new PersonNNNN("ram");
+console.log(ankit.getName());

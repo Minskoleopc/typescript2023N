@@ -48,7 +48,6 @@ console.log(mayuri.getName())
 
 
 // program 4
-
 class PersonNNNN {
     private readonly name: string;
     public constructor(name: string) {
@@ -61,10 +60,9 @@ class PersonNNNN {
     public getName():string{
         return this.name
     }
-
 }
 let ankit =  new PersonNNNN("ram")
-
+console.log(ankit.getName())
 
 
 
