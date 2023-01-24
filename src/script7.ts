@@ -130,6 +130,23 @@ abstract class RBIIndia {
     }
 }
 
+class SBIab extends RBIIndia{
+
+     loan():number{
+        return 100
+     }
+     save():number{
+        return 100
+     }
+}
+
+let aaa = new SBIab()
+
+aaa.country()
+aaa.loan()
+aaa.save()
+
+
 
 
 
