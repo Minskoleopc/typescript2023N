@@ -80,7 +80,6 @@ rama.displayNameSon()
 
 //A ---> B ---- C  ===> C object reference A & B
 // Father  (parent) =====> sonA (child)  daughter(child)
-
 class FatherV {
     firstName:string;
     lastName:string;
@@ -122,7 +121,7 @@ let chinmayA = new SonV("shirish","deshpande","chinmay")
 let  gauri = new DaughterV("shirish","deshpande","gauri")
 
 
-
+// cypress --- java in detail --- selenium
 
 
 
