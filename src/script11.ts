@@ -30,29 +30,34 @@
 // // }
 // // let ameya = new PersonJ("amol","1990")
 
+type Admin = {
+    name:string
+    roles:string[]
+}
+type Employee = {
+    name:string
+    startDate:Date
+}
 
-// type Admin = {
-//     name:string
-//     roles:string[]
-// }
-// type Employee = {
-//     name:string
-//     startDate:Date
-// }
+type CalEmployee = Admin & Employee
+type CalEmployee2 = Admin | Employee
 
-// type CalEmployee = Admin & Employee
+let h1:CalEmployee = {
+    name:"vijeet",
+    roles:["admin","customer","operator"],
+    startDate:new Date()
+}
 
-// let h1:CalEmployee = {
-//     name:"vijeet",
-//     roles:["admin","customer","operator"],
-//     startDate:new Date()
-// }
+
+
+
+
 
 // // program 3
-// type language = string | boolean
-// type language2 = boolean | number
-// type language3 = language  & language2
-// let b1:language3 = true
+type language = string | boolean
+type language2 = boolean | number
+type language3 = language  & language2
+let b1:language3 = true
 
 type ch = number|string
 // program 4
