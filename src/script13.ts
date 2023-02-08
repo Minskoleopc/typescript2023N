@@ -4,7 +4,7 @@ interface BusinessPartner {
 }
 interface Indentity {
     id:number ,
-    name:number
+    name:number|string
 }
 interface Contact {
     email:string;
@@ -36,6 +36,7 @@ let j:Employee1 = {
     email:"ram",
     phone:"ad"
 }
+
 
 
 

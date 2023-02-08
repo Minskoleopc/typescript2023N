@@ -17,54 +17,86 @@
 
 
 class Customera {
-    idCreditAllowed():boolean{
+    idCreditAllowed(): boolean {
         return true
     }
 }
 
 class Suppliera {
-    isInShortList():boolean{
+    
+    isInShortList(): boolean {
         return true
     }
 }
 
-type  BusinessPartnera = Customera | Suppliera
+type BusinessPartnera = Customera | Suppliera
 
 
-function signContract(partner:BusinessPartnera):string{
-
-    let message:string = '';
-    // sign a contract with supplier
-    if(partner instanceof Suppliera){
-        if(partner.isInShortList()){
-            message =`sign a contract with supplier`
-        }
-    }
-    if(partner instanceof Customera){
-        if(partner.idCreditAllowed()){
-            message = `sign a contract with customer`
-        }
-    }
-    // sign a contract with customer
-    return message;
-}
-console.log(signContract(new Suppliera()))
-console.log(signContract(new Customera()))
+// function signContract(partner:BusinessPartnera):string{
+//     let message:string = '';
+//     // sign a contract with supplier
+//     if(partner instanceof Suppliera){
+//         if(partner.isInShortList()){
+//             message =`sign a contract with supplier`
+//         }
+//     }
+//     if(partner instanceof Customera){
+//         if(partner.idCreditAllowed()){
+//             message = `sign a contract with customer`
+//         }
+//     }
+//     // sign a contract with customer
+//     return message;
+// }
+// console.log(signContract(new Suppliera()))
+// console.log(signContract(new Customera()))
 
 
 // let ar = [22,33,44,55,6]
 // console.log(ar instanceof Array)
 
 
-let family = {
-    firstName:"chinmay",
-    lastName:"deshpande"
-}
+// let family = {
+//     firstName:"chinmay",
+//     lastName:"deshpande"
+// }
 
-if('firstName' in family){
-    console.log('find')
-}
+// if('firstName' in family){
+//     console.log('find')
+// }
 
+
+function signContract(partner: BusinessPartnera): string {
+    let message: string = '';
+
+    if ('idCreditAllowed' in partner) {
+        if (partner.idCreditAllowed()) {
+            message = `sign a contract with customer`
+        }
+    }
+
+    if ('isInShortList' in partner) {
+        if (partner.isInShortList()) {
+            message = `sign a contract with customer`
+        }
+    }
+
+    // sign a contract with supplier
+    // if(partner instanceof Suppliera){
+    //     if(partner.isInShortList()){
+    //         message =`sign a contract with supplier`
+    //     }
+    // }
+    // if(partner instanceof Customera){
+    //     if(partner.idCreditAllowed()){
+    //         message = `sign a contract with customer`
+    //     }
+    // }
+    // sign a contract with customer
+    return message;
+}
+console.log(signContract(new Suppliera()))
+console.log(signContract(new Customera()))
 
 
 

@@ -1,52 +1,51 @@
-// // interface Greetable {
-// //     name:string
-// //     greet(word:string):void
-// //     display(year:string):void
-// // }
+interface Greetable {
+    name:string
+    greet(word:string):void
+    display(year:string):void
+}
 
-// // interface year {
-// //     year:string
-// //     display(year:string):void
-// // }
+interface year {
+    year:string
+    display(year:string):void
+}
 
 
-// // class PersonJ implements Greetable ,year {
-// //     name: string
-// //     year:string
+// class PersonJ implements Greetable ,year {
+//     name: string
+//     year:string
 
-// //     constructor(name:string,year:string){
-// //         this.name = name
-// //         this.year = year
-// //     }
+//     constructor(name:string,year:string){
+//         this.name = name
+//         this.year = year
+//     }
 
-// //     greet(word: string): void {
-// //         console.log(`welcome ${word}`)
-// //     }
+//     greet(word: string): void {
+//         console.log(`welcome ${word}`)
+//     }
 
-// //     display(year: string): void {
-// //         console.log(`welcome ${year}`)
-// //     }
+//     display(year: string): void {
+//         console.log(`welcome ${year}`)
+//     }
 
-// // }
+// }
 // // let ameya = new PersonJ("amol","1990")
 
-type Admin = {
-    name:string
-    roles:string[]
-}
-type Employee = {
-    name:string
-    startDate:Date
-}
+// type Admin = {
+//     name:string
+//     roles:string[]
+// }
+// type Employee = {
+//     name:string
+//     startDate:Date
+// }
 
-type CalEmployee = Admin & Employee
-type CalEmployee2 = Admin | Employee
+// type CalEmployee = Admin & Employee
 
-let h1:CalEmployee = {
-    name:"vijeet",
-    roles:["admin","customer","operator"],
-    startDate:new Date()
-}
+// let h1:CalEmployee = {
+//     name:"vijeet",
+//     roles:["admin","customer","operator"],
+//     startDate:new Date()
+// }
 
 
 
